@@ -1,0 +1,340 @@
+$childs : 2,3;
+@font-face{
+    font-family: star-wars cursive;
+    src: url(../assets/fonts/starwars/Starjhol.ttf);
+}
+.stage3{
+    background-image: url(../assets/pics/space.jpg);
+    margin: 0;
+    padding: 0;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+.stars{
+   position: absolute;
+   display: none;
+}
+.logolar{
+    width: 1920px;
+    
+      div{
+        margin: auto;
+        text-align: center;
+    }
+    img{
+        width: 10%;
+        margin-top: 50px;
+    }
+}
+
+.bg{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    #textH {
+        font-family: star-wars cursive;
+        stroke-dashoffset: 1000px;
+        stroke-dasharray: 1000px;
+        animation: draw 5s forwards ease-in;
+        animation-delay: 1s;
+        fill-opacity: 0;
+      }
+}
+.bg1,
+.bg2{
+    width: 300px;
+    opacity: 1;
+}
+.bg1{
+    float: right;
+    margin-right: 150px;
+    opacity: 0;
+    animation: opacityIn ease-out 2s forwards;
+    animation-delay: 1s;
+}
+.bg2{
+    float: left;
+    margin-left: 150px;
+    opacity: 0;
+    animation: opacityIn ease-out 2s forwards;
+    animation-delay: 1s;
+}
+.lightSaber2,.lightSaber{
+ position: relative;
+
+}
+.lightSaber{
+    transform: rotate(40deg);
+}
+.lightSaber2{
+    transform: rotate(-40deg);
+}
+.lightSaber .plasma{
+    position: absolute;
+    border-radius: 12px 12px 0 0;
+    background-color: red;
+    width: 12px;
+    height: 0px;
+    bottom: -110px;
+    left: 320px;
+    box-shadow: 0 0 30px #e51115; 
+	box-shadow: 0 0 50px #e51115; 
+     box-shadow: 0 0 30px #e51115;
+     background: rgb(229,17,21); /* Old browsers */
+	background: linear-gradient(to right, rgba(229,17,21,1) 0%,rgb(255, 255, 255) 30%,rgba(254,254,254,1) 47%,rgba(254,254,254,1) 71%,rgba(229,17,21,1) 100%); /* W3C */ 
+    animation: lightSaber2 4s linear forwards ;
+    animation-delay: 3s;
+}
+.lightSaber2 .plasma2{
+    position: absolute;
+    border-radius: 12px 12px 0 0;
+    background-color: #3784d6;
+    width: 11px;
+    height: 0px;
+    right: 315px;
+    bottom: -74px;
+    //clip-path: polygon(35% 0%, 65% 0, 300% 100%, -300% 100%);
+    background: rgb(55,132,214); /* Old browsers */
+	background: linear-gradient(to right, rgba(55,132,214,1) 0%,rgba(254,254,254,1) 30%,rgba(254,254,254,1) 47%,rgba(254,254,254,1) 71%,rgba(55,132,214,1) 100%); /* W3C */
+    animation: lightSaber  4s linear forwards ;
+    animation-delay: 3s;
+}
+.electricity {
+    margin: 0 auto;
+    width: 575px;
+    position: absolute;
+    left: 370px;
+    top: 130px;
+    transform:rotate(-50deg);
+    z-index: 3;
+}
+#svgElectric {
+    position: absolute;
+    opacity: 0.7;
+}
+.clear{
+    margin-top: 6%;
+    width: 100%;
+    height: 300px;
+    z-index: 99;
+}
+.menuler{
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    .menuBir img{
+        width: 72%;
+        margin-left: 230px;
+        opacity: 0;
+        animation: opacityAndMargin 1s linear forwards;
+        animation-delay: 8s;
+    }
+    .menuİki img{
+        width: 70%;
+        margin-right: 230px;
+        opacity: 0;
+        animation: opacityAndMargin2 1s linear forwards;
+        animation-delay: 8s;
+    }
+    .menuBir,
+    .menuİki{
+        height: 100%;
+        display: flex;
+    }
+    .menuBir{
+        flex-direction: row;
+    }
+    .menuİki{
+        flex-direction: row-reverse;
+    }
+    .menuBir{
+        width: 32%;
+    }
+    .menuİki{
+        width: 30%;
+    }
+    .fiyatlar{
+        width: 600px;
+        display: flex;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
+    }
+    .fiyatlar div{
+        height: 110px;
+        font-size: 80px;
+        font-family: teko;
+
+        text-align: center;
+        align-self: center;
+    }
+    .fiyatlar div:nth-child(1){
+        width: 299px;
+        .miktar{
+            border-radius: 0 12px 12px 0;
+            width: 0px;
+            margin-left: 300px;
+            background-color: #EEDB00;
+            animation: etiket 1s linear forwards;
+            animation-delay: 10s;
+        }
+        .miktar{
+            transform: rotate(180deg);
+            transform-origin: left;
+        }
+        .fiyat{
+            transform: rotate(-180deg);
+            opacity: 0;
+            animation: opacityIn ease-out 0.2s forwards;
+            animation-delay: 11s;
+        }
+    }
+    .fiyatlar div:nth-child(3){
+        width: 299px;
+        .miktar2{
+            border-radius: 0 12px 12px 0;
+            width: 0px;
+            background-color: #EEDB00;
+            animation: etiket 1s linear forwards;
+            animation-delay: 10s;
+        }
+        .fiyat2{
+            opacity: 0;
+            animation: opacityIn ease-out 0.2s forwards;
+            animation-delay: 11s;
+        }
+    }
+    .fiyatlar span{
+        width: 1%;
+    }
+    
+    .menu1,.menu2{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu1{
+        margin-left: 230px;
+        opacity: 0;
+        animation: opacityAndMargin 1s linear forwards;
+        animation-delay: 9s;
+    }
+    .menu2{
+        margin-right: 230px;
+        opacity: 0;
+        animation: opacityAndMargin2 1s linear forwards;
+        animation-delay: 9s;
+    }
+    .menu1 img{
+        width: 90px;
+        
+    }
+    .menu2 img{
+        width: 90px;
+    }
+    
+}
+.close{
+    animation: close 2s linear forwards;
+}
+@keyframes opacityInOut{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes lightSaber {
+    0%{
+        height: 0px;
+    }
+    90%{
+	    box-shadow: 0 0 50px #3784d6;   
+    }
+    100%{
+	    box-shadow: 0 0 100px #3784d6; 
+        height: 350px;
+    }
+}
+@keyframes lightSaber2 {
+    0%{
+        height: 0px;
+    }
+    90%{
+	    box-shadow: 0 0 50px #e51115; 
+    }
+    100%{
+	    box-shadow: 0 0 100px #e51115; 
+        height: 350px;
+    }
+}
+@keyframes draw {
+    0%{
+        stroke-dashoffset: 1000px;
+    }
+    65%{
+        fill-opacity: 0;
+    }
+    100% {
+        fill-opacity: 1;
+        stroke-dashoffset: 0;
+    }
+  }
+  @keyframes opacityAndMargin{
+      0%{
+        opacity: 0;
+        margin-left: 230px;
+      }
+      100%{
+        opacity: 1;
+        margin-left: 0px;
+      }
+  }
+  @keyframes opacityAndMargin2{
+    0%{
+      opacity: 0;
+      margin-right: 230px;
+    }
+    100%{
+      opacity: 1;
+      margin-right: 0px;
+    }
+}
+@keyframes etiket {
+    0%{
+        width: 0px;       
+    }
+    100%{
+        width: 300px;
+    }
+}
+@keyframes opacityIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }    
+}
+@keyframes close{
+    0%{
+        height: 1080px;
+    }
+    100%{
+        height: 0px;
+    }
+}

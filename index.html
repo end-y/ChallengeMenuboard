@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/stage1.css">
+    <link rel="stylesheet" href="styles/stage2.css">
+    <link rel="stylesheet" href="styles/stage3.css">
+    <link rel="stylesheet" href="styles/stage4.css">
+    <title>MenuBoard</title>
+</head>
+<body>
+    <div class="stages">
+        <!-- bölüm bir başlangıç -->
+        <div id="stage1" class="stage1">
+            <div class="logoBaslik">
+                <h1>Uzaaay</h1>
+                <h1>Burger</h1>
+            </div>
+            <div class="box"></div>
+            <div class="box2"></div>
+            <div class="shuttle">
+                <img src="assets/pics/logo.png"> <!--uzay mekiği-->
+            <!-- uzay mekiği ateş görselinin başlangıcı -->
+                <div id="fire" class="fire">
+                    <svg class="fireSvg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="48.667px" height="66px" viewBox="0 0 48.667 66" enable-background="new 0 0 48.667 66" xml:space="preserve">
+               <g>
+                   <path fill="#FD9500" d="M16.167,6.542c0,0-9.25,8.875-6.75,25.875c2.625-2.125,3.16-3,3.16-3s1.09,0.5,0.715,4
+                       c0.875,3,5.375,12.75,7.75,14.625c0.375,2.25,2.625,3.875,1.75,9.75c0.625,1,0.625,1,0.625,1s11.625-13.375,14.75-24.625
+                       c1.875,1.875,3.75,3.875,3.75,3.875s3.5-18.125-5.875-31.5C31.917,6.292,16.167,6.542,16.167,6.542z"/>
+                   <path fill="#FEE31E" d="M19.169,6.667c0,0-11.668,16.334,7.166,37.334c2.167-3.5,17.5-21.334,6-37.334
+                       C22.835,6.667,19.169,6.667,19.169,6.667z"/>
+                   <path fill="#FFEEE1" d="M22.466,6.667c0,0-6.105,8.545,3.749,19.533c1.134-1.832,9.155-11.533,3.139-19.533
+                       C24.384,6.667,22.466,6.667,22.466,6.667z"/>
+               </g>
+               </svg>
+               </div>
+                
+                <div id="fire2" class="fire2">
+                    <svg class="fireSvg2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="48.667px" height="66px" viewBox="0 0 48.667 66" enable-background="new 0 0 48.667 66" xml:space="preserve">
+               <g>
+            
+                   <path fill="#FD9500" d="M16.167,6.542c0,0-9.25,8.875-6.75,25.875c2.625-2.125,3.16-3,3.16-3s1.09,0.5,0.715,4
+                       c0.875,3,5.375,12.75,7.75,14.625c0.375,2.25,2.625,3.875,1.75,9.75c0.625,1,0.625,1,0.625,1s11.625-13.375,14.75-24.625
+                       c1.875,1.875,3.75,3.875,3.75,3.875s3.5-18.125-5.875-31.5C31.917,6.292,16.167,6.542,16.167,6.542z"/>
+                   <path fill="#FEE31E" d="M19.169,6.667c0,0-11.668,16.334,7.166,37.334c2.167-3.5,17.5-21.334,6-37.334
+                       C22.835,6.667,19.169,6.667,19.169,6.667z"/>
+                   <path fill="#FFEEE1" d="M22.466,6.667c0,0-6.105,8.545,3.749,19.533c1.134-1.832,9.155-11.533,3.139-19.533
+                       C24.384,6.667,22.466,6.667,22.466,6.667z"/>
+               </g>
+               
+               </svg>
+            </div>
+            <!-- uzay mekiği ateş görselinin bitişi -->
+        </div>
+            <!-- uzay mekiği animasyonu duman başlangıcı -->
+            <div class="cloud">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="383.333px" height="262.001px" viewBox="0 0 383.333 262.001" enable-background="new 0 0 383.333 262.001"
+                     xml:space="preserve">
+                <path fill="#FFFFFF" d="M361.464,140.797c0-32.57-19.965-60.467-48.318-72.151c-4.318-14.111-17.442-24.375-32.968-24.375
+                    c-9.308,0-17.747,3.695-23.95,9.69c-6.203-5.995-14.643-9.69-23.95-9.69c-4.569,0-8.927,0.897-12.917,2.512
+                    C213.673,20.054,189.94,0,161.516,0c-32.667,0-59.15,26.482-59.15,59.149c0,3.471,0.316,6.867,0.89,10.174
+                    c-0.176-0.002-0.351-0.013-0.527-0.013c-9.079,0-17.466,2.957-24.26,7.951c-7.521-8.856-18.731-14.482-31.261-14.482
+                    c-22.647,0-41.005,18.358-41.005,41.005c0,18.832,12.7,34.688,29.999,39.499c-1.097,3.699-1.694,7.612-1.694,11.667
+                    c0,4.493,0.733,8.813,2.068,12.858c-7.226,9.81-11.503,21.924-11.503,35.042c0,32.668,26.482,59.15,59.149,59.15
+                    c18.121,0,34.329-8.156,45.179-20.989c10.85,12.833,27.058,20.989,45.178,20.989c18.666,0,35.309-8.65,46.149-22.155
+                    c7.323,13.052,23.788,22.155,42.938,22.155c25.957,0,47-16.715,47-37.334c0-3.511-0.623-6.903-1.764-10.125
+                    C339.486,203.988,361.464,174.97,361.464,140.797z M143.242,116.672c0.062-0.399,0.108-0.806,0.159-1.21
+                    c0.202,0.066,0.402,0.139,0.605,0.201C143.749,115.998,143.492,116.332,143.242,116.672z"/>
+                </svg> 
+        </div>
+        <div class="cloud2">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="230.667px" height="155.666px" viewBox="0 0 230.667 155.666" enable-background="new 0 0 230.667 155.666"
+             xml:space="preserve">
+        <path fill="#FFFFFF" d="M174.667,56.667c-7.63,0-14.86,1.658-21.351,4.609c-4.013-24.729-25.455-43.61-51.316-43.61
+            c-10.557,0-20.373,3.155-28.574,8.561c-6.031-4.983-13.756-8.196-22.264-8.785C47.263,9.249,38.511,3.536,28.333,3.536
+            c-13.806,0-24.998,10.505-24.998,23.463c0,6.859,3.137,13.03,8.137,17.321c-0.74,2.778-1.139,5.685-1.139,8.679
+            c0,18.116,14.394,33.067,33.032,35.354C39.936,94.578,38,101.585,38,108.999c0,25.773,23.281,46.667,52,46.667
+            c7.865,0,15.317-1.576,22-4.381c6.683,2.805,14.135,4.381,22,4.381c7.425,0,14.48-1.406,20.871-3.923
+            c6.081,2.524,12.771,3.923,19.796,3.923c27.981,0,50.666-22.162,50.666-49.5S202.648,56.667,174.667,56.667z"/>
+        </svg>
+        </div>
+        <div class="cloud3"><?xml version="1.0" encoding="utf-8"?>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="230.667px" height="155.666px" viewBox="0 0 230.667 155.666" enable-background="new 0 0 230.667 155.666"
+                 xml:space="preserve">
+            <path fill="#FFFFFF" d="M54.001,56.667c7.63,0,14.86,1.658,21.351,4.609c4.013-24.729,25.455-43.61,51.316-43.61
+                c10.558,0,20.373,3.155,28.574,8.561c6.031-4.983,13.757-8.196,22.264-8.785c3.899-8.192,12.651-13.905,22.829-13.905
+                c13.807,0,24.998,10.505,24.998,23.463c0,6.859-3.137,13.03-8.137,17.321c0.74,2.778,1.139,5.685,1.139,8.679
+                c0,18.116-14.395,33.067-33.031,35.354c3.429,6.226,5.364,13.232,5.364,20.646c0,25.773-23.281,46.667-52,46.667
+                c-7.865,0-15.317-1.576-22-4.381c-6.683,2.805-14.135,4.381-22,4.381c-7.425,0-14.48-1.406-20.871-3.923
+                c-6.081,2.524-12.771,3.923-19.796,3.923c-27.981,0-50.666-22.162-50.666-49.5S26.02,56.667,54.001,56.667z"/>
+            </svg>
+        </div>
+        <!-- uzay mekiği animasyonu duman bitişi -->
+        </div>
+        <!-- bölüm bir bitiş -->
+        <!-- bölüm iki başlangıç -->
+        <div id="stage2" class="stage2">
+            <!-- logo bölümü -->
+            <div id="logo" class="logo">
+                <div class="baslik">
+                <h1>Uzaaay</h1>
+                <h1>Burger</h1>
+            </div>
+                <img src="assets/pics/logo.png">
+            </div>
+            <!-- ortadaki yuvarlak başlangıç -->
+            <div id="logo1" class="circle"></div>
+            <div id="metin1" class="metin1">
+                <p>İkisi</p>
+                <p>Bir Arada</P>
+                <p>Menu</p>
+            </div>
+            <div id="pulse" class="scaleUp"></div>
+            <!-- ortadaki yuvarlak bitiş -->
+            
+            <div id="animation-left" class="animation-left sol poly-anim"></div> <!-- animasyonlu arkaplan-->
+            <div id="animation-right" class="animation-right sag"></div> <!-- animasyonlu arkaplan-->
+            <!-- aşağıdaki menuler başlangıç -->
+            <!-- menu1 -->
+            <div id="kucuksol" class="kucuksol ">
+                <circle fill="#FF6347" cx="25" cy="25" r="25"></circle>
+                <img class="opacityInAndScale delay-1s" id="span1" src="assets/pics/hamburger.png">
+                <h1 class="opacityIn plus-1s" id="spanh1" >+</h1>
+                <img class="opacityInAndScale delay-2s" id="span1" src="assets/pics/cocacola.png">
+                <h1 class="opacityIn plus-2s" id="spanh1">+</h1>
+                <img class="opacityInAndScale delay-3s" id="span1" src="assets/pics/potato.png">
+            </div>
+            <!-- menu 2 -->
+            <div id="kucuksag" id="kucuksag" class="kucuksag">
+                <img id="span2" class="opacityInAndScale delay-4s" src="assets/pics/hamburger2.png">
+                <h1 class="opacityIn plus-4s" id="spanh2">+</h1>
+                <img id="span2" class="opacityInAndScale delay-5s" src="assets/pics/cocacola.png">
+                <h1 class="opacityIn plus-5s" id="spanh2">+</h1>
+                <img id="span2" class="opacityInAndScale delay-6s" src="assets/pics/potato.png">
+            </div>
+            <div id="urunler"  class="urunler">
+                <img id="first" class="halfHamburger1 halfHamburger1-delay" src="assets/pics/hamburger.png">
+                <!-- <img class="halfHamburger2" src="assets/pics/hamburger.png"> -->
+            </div>
+            <div class="urunler">
+                <img id= "second" class="halfHamburger1 second halfHamburger2-delay" src="assets/pics/hamburger2.png">
+                <!-- <img class="halfHamburger2" src="assets/pics/hamburger2.png"> -->
+            </div>
+            <!-- aşağıdaki menuler bitiş -->
+            <!-- fiyat etiketi başlangıç -->
+            <div id="circle" class="circle2">
+                <h5>Sadece</h5>
+                <h1>39.90₺</h1>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="250px" height="274.334px" viewBox="0 0 250 274.334" enable-background="new 0 0 250 274.334" xml:space="preserve">
+        <polygon fill="#D31512" points="229.036,159.007 248.694,139.35 226.163,116.819 237.082,87.407 212,78.13 212,51 180.395,51 
+            167.61,23.164 143.708,34.182 125.15,15.714 102.984,37.927 73.087,26.562 63.95,51 37,51 37,82.68 8.413,95.673 19.927,120.993 
+            0.287,140.65 22.828,163.182 11.915,192.595 37,201.871 37,229 68.606,229 81.391,256.836 105.293,245.818 123.85,264.284 
+            146.017,242.072 175.913,253.439 185.052,229 212,229 212,197.319 240.586,184.327 "/>
+        </svg>
+        </div>
+        <!-- fiyat etiketi bitiş -->
+        </div>
+        <!-- bölüm iki bitiş -->
+        <!-- bölüm üç başlangıç -->
+        <div id="stage3" class="stage3"> 
+            <!-- star wars logo -->
+                <div id="logolar" class="logolar">
+                    <div><img src="assets/pics/starwars_logo.png" alt=""></div>
+                </div>
+                <!-- karakterler başlangıç -->
+                <div id="bg" class="bg">
+                    <!-- kırmızı starwars karakter baslangıç -->
+                    <!-- elekttrik efekti -->
+                    <div class="electricity">
+                        <svg id="svgElectric" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200">
+                          <defs>
+                          <filter id="f1" x="0" y="0">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+                          </filter>
+                        </defs>
+                          <g>
+                            <path d="M0,100,0,100" fill="none" stroke="#e51115" stroke-width="7.5"filter="url(#f1)"></path>
+                            <path d="M0,100,0,100" fill="none" stroke="#fefefe" stroke-width="2"></path>
+                            <path d="M0,50,0,50" fill="none" stroke="#fefefe" stroke-width="2"></path>
+                          </g>
+                        </svg>
+                      </div>
+                      <!-- karakter -->
+                    <div>
+                        <!-- kılıç efekti -->
+                    <img class="bg1" src="assets/pics/starWars2.png" alt="">
+                    <div class="lightSaber">
+                        <div class="plasma"></div>
+                    </div>
+                </div>
+                <!-- kırmızı starwars karakter baslangıç -->
+                <!-- yazı animasyonu -->
+                <div>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="522.5px" height="210.5px" viewBox="0 0 522.5 210.5" enable-background="new 0 0 522.5 210.5" xml:space="preserve">
+                <text id="textH" fill="#fff"  stroke="#EEDB00"  transform="matrix(1 0 0 1 20.4731 80.3799)" font-family="'StarJediHollow'" font-size="100">tarafini</text>
+                <text id="textH" fill="#fff"  stroke="#EEDB00" transform="matrix(1 0 0 1 166.7568 181.6621)" font-family="'StarJediHollow'" font-size="100">seç</text>
+                </svg>
+                </div>
+                <div>
+                    <!-- karakter -->
+                    <img class="bg2" src="assets/pics/starWars1.png" alt="">
+                    <!-- kılıç efekti -->
+                    <div class="lightSaber2">
+                        <div class="plasma2"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- karakterler bitiş -->
+            <!-- Menuler başlangıç -->
+            <div id="clear" class="clear">
+            <div class="menuler">
+            <div class="menuBir">
+                <img src="assets/pics/kara_hamburger.png" alt="">
+                <div class="menu1">
+                    <img src="assets/pics/patates.png" alt="">
+                    <img src="assets/pics/cocacola.png" alt="">
+                </div>
+            </div>
+            <div class="fiyatlar">
+                <div class="fiyat1">
+                    <div class="miktar"><div class="fiyat">29,99₺</div> </div>
+                </div>
+                <span class="cizgi">
+                    <svg height="200" width="500">
+                    <line x1="0" y1="0" x2="0" y2="500" stroke="#EEDB00"
+                    stroke-width="10"  />
+                  </svg></span>
+                <div class="fiyat2">
+                    
+                    <div class="miktar2"><div class="fiyat2">29,99₺</div> </div>
+                </div>
+            </div>
+            <div class="menuİki">
+                <img class="burger" src="assets/pics/normal_hamburger.png" alt="">
+                <div class="menu2">
+                    <img src="assets/pics/patates.png" alt="">
+                    <img src="assets/pics/cocacola.png" alt="">
+                </div>
+            </div>
+            </div>
+                
+                </div>
+                <!-- arkada beliren yıldız animasyonu -->
+                <div id="star" class="star"></div>
+        
+    </div>
+    <!-- bölüm üç bitiş -->
+    <div id="stage4" class="stage4">
+        <div class="stage" id="bgStage4">
+            <div class="baslik2">
+                <h1>Simdi <br><span class="tatli">Tatlı</span> <br>Zamanı!</h1>
+            </div>
+            <div class="menu">
+                <!-- kahve çizini üç layer'dan oluşmaktadır. birinci layerda gaussian blur kullanıldı. İkinci layer çizimin kendisi üçüncü layer beyaz çizgiden oluşuyor -->
+                <div class="kahve" >
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px"
+         height="307.166px" viewBox="0 0 300 307.166" enable-background="new 0 0 300 307.166" xml:space="preserve">
+         <filter id="blurMe">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="9" />
+          </filter>
+    <g id="Layer_2">
+    </g>
+    <g  id="Layer_1">
+        <path filter="url(#blurMe)" fill="none" stroke="#ED1E79" stroke-width="3" stroke-miterlimit="10" d="M253.222,183.782
+            c1.846-10.294,2.854-18.782,2.854-30.782H24.854c0,81,51.76,143.691,115.61,143.691c31.609,0,60.242-16.471,81.113-42.211
+            c3.225,1.426,6.674,2.23,10.314,2.959c23.805,4.76,46.51-7.981,50.717-29.024C286.448,209.227,273.573,190.604,253.222,183.782z
+             M268.317,230.634c-5.105,12.734-22.344,17.805-38.51,11.324l18.488-46.114C264.458,202.322,273.423,217.899,268.317,230.634z"/>
+        <g>
+            <path  fill="none" stroke="#808080" stroke-miterlimit="10" d="M187,135.75c0.864,0.504-27-18.75-1-46.25s0-54,0-54s14.5,26-8,53
+                C158.5,113.75,163,121.75,187,135.75z"/>
+            <path fill="none" stroke="#808080" stroke-miterlimit="10" d="M151,133.75c0.864,0.504-27-18.75-1-46.25s0-54,0-54s14.5,26-8,53
+                C122.5,111.75,127,119.75,151,133.75z"/>
+            <path fill="none" stroke="#808080" stroke-miterlimit="10" d="M113.212,133.917c0.574,0.334-17.932-12.453-0.664-30.717
+                s0-35.864,0-35.864s9.63,17.268-5.313,35.2C94.284,119.306,97.272,124.619,113.212,133.917z"/>
+        </g>
+    </g>
+    <g  id="Layer_1_copy_2">
+        <path fill="none" stroke="#ED1E79" stroke-width="3" stroke-miterlimit="10" d="M253.057,183.79
+            c1.843-10.276,2.849-18.79,2.849-30.79H25.069c0,81,51.674,143.512,115.417,143.512c31.557,0,60.142-16.414,80.979-42.111
+            c3.219,1.424,6.662,2.243,10.297,2.97c23.766,4.752,46.433-7.99,50.633-28.999C286.228,209.215,273.374,190.602,253.057,183.79z
+             M268.127,230.624c-5.097,12.713-22.307,17.775-38.445,11.306l18.457-46.038C264.274,202.36,273.224,217.911,268.127,230.624z"/>
+        <g>
+            <path fill="none" stroke="#808080" stroke-width="3" stroke-miterlimit="10" d="M187,135.75c0.864,0.504-27-18.75-1-46.25
+                s0-54,0-54s14.5,26-8,53C158.5,113.75,163,121.75,187,135.75z"/>
+            <path fill="none" stroke="#808080" stroke-width="3" stroke-miterlimit="10" d="M151,133.75c0.864,0.504-27-18.75-1-46.25
+                s0-54,0-54s14.5,26-8,53C122.5,111.75,127,119.75,151,133.75z"/>
+            <path fill="none" stroke="#808080" stroke-width="3" stroke-miterlimit="10" d="M113.212,133.917
+                c0.574,0.334-17.932-12.453-0.664-30.717s0-35.864,0-35.864s9.63,17.268-5.313,35.2
+                C94.284,119.306,97.272,124.619,113.212,133.917z"/>
+        </g>
+    </g>
+    <g id="Layer_1_copy">
+        <path fill="none" stroke="#F2F2F2" stroke-miterlimit="10" d="M253.222,183.282c1.846-10.294,2.854-18.282,2.854-30.282H24.854
+            c0,81,51.76,143.191,115.61,143.191c31.609,0,60.242-16.721,81.113-42.461c3.225,1.426,6.674,2.105,10.314,2.834
+            c23.805,4.76,46.51-7.794,50.717-28.837C286.448,208.539,273.573,190.104,253.222,183.282z M268.317,229.634
+            c-5.105,12.734-22.344,17.805-38.51,11.324l18.488-46.114C264.458,201.322,273.423,216.899,268.317,229.634z"/>
+        <g>
+            <path fill="none" stroke="#FFFFFF" stroke-width="0.25" stroke-miterlimit="10" d="M187,134.75c0.864,0.504-27-18.75-1-46.25
+                s0-54,0-54s14.5,26-8,53C158.5,112.75,163,120.75,187,134.75z"/>
+            <path fill="none" stroke="#FFFFFF" stroke-width="0.25" stroke-miterlimit="10" d="M151,132.75c0.864,0.504-27-18.75-1-46.25
+                s0-54,0-54s14.5,26-8,53C122.5,110.75,127,118.75,151,132.75z"/>
+            <path fill="none" stroke="#FFFFFF" stroke-width="0.25" stroke-miterlimit="10" d="M113.212,132.917
+                c0.574,0.334-17.932-12.453-0.664-30.717s0-35.864,0-35.864s9.63,17.268-5.313,35.2
+                C94.284,118.306,97.272,123.619,113.212,132.917z"/>
+        </g>
+    </g>
+    </svg>
+                </div>
+    <span class="arti">+</span> <!-- aradaki artı -->
+    <!-- kek çizimi üç layer'dan oluşmaktadır. birinci layerda gaussian blur kullanıldı. İkinci layer çizimin kendisi üçüncü layer beyaz çizgiden oluşuyor -->
+    <div class="cupcake">   
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px"
+         height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+    <g id="Layer_1">
+    </g>
+    <filter id="blurMe">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="9" />
+      </filter>
+    <g id="Layer_2">
+        <g filter="url(#blurMe)">
+            <path fill="#FFFFFF"  stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M43.43,156.977"/>
+            <polygon fill="none" stroke="#0071BC" stroke-width="3" stroke-miterlimit="10" points="219.606,286.5 77.705,286.5 43.43,146.5 
+                254.567,146.5 		"/>
+            <path fill="none" stroke="#FF00FF" stroke-width="3" stroke-miterlimit="10" d="M144,113.5H45.475
+                c-10.721,0-19.412,7.414-19.412,16.5l0,0c0,9.086,8.691,16.5,19.412,16.5h203.847c10.721,0,19.47-7.414,19.47-16.5l0,0
+                c0-9.086-8.636-16.5-19.354-16.5H217.55h22.942c9.792,0,17.731-7.414,17.731-16.5l0,0c0-9.086-7.939-16.5-17.731-16.5H127"/>
+            <path fill="none" stroke="#FF00FF" stroke-width="3" stroke-miterlimit="10" d="M127,80.5h100.056
+                c8.379,0,15.172-7.414,15.172-16.5s-6.793-16.5-15.172-16.5h-19.652c15.116-14-20.474-34.275-20.474-34.275
+                c9.369,15.252-5.263,30.942-19.066,34.275H67.74c-8.378,0-15.172,7.414-15.172,16.5s6.794,16.5,15.172,16.5h-13.18
+                c-9.791,0-17.988,6.873-17.988,15.959l0,0c0,9.086,7.909,16.699,17.7,16.699"/>
+            <path fill="none" stroke="#FF00FF" stroke-width="3" stroke-miterlimit="10" d="M79.532,90.481"/>
+            <line fill="none" stroke="#FF00FF" stroke-width="3" stroke-miterlimit="10" x1="149" y1="113.5" x2="171" y2="113.5"/>
+            <line fill="none" stroke="#FF00FF" stroke-width="3" stroke-miterlimit="10" x1="119" y1="80.5" x2="97" y2="80.5"/>
+            <line fill="none" stroke="#FF00FF" stroke-width="3" stroke-miterlimit="10" x1="75" y1="80.5" x2="80" y2="80.5"/>
+            <line fill="none" stroke="#FF00FF" stroke-width="3" stroke-miterlimit="10" x1="187" y1="113.5" x2="193" y2="113.5"/>
+            <path fill="#0071BC" d="M212.717,278c1.35,0,2.443,0.682,2.443,1.5l0,0c0,0.818-1.094,1.5-2.443,1.5h-89.319
+                c-1.35,0-2.443-0.682-2.443-1.5l0,0c0-0.818,1.094-1.5,2.443-1.5H212.717z"/>
+            <path fill="#0071BC" d="M219.946,249.536c0.346-1.305,1.252-2.195,2.043-1.985l0,0c0.792,0.21,1.137,1.434,0.791,2.737
+                l-7.52,28.339c-0.346,1.305-1.252,2.195-2.044,1.984l0,0c-0.791-0.21-1.136-1.432-0.79-2.736L219.946,249.536z"/>
+            <path fill="#0071BC" d="M230.946,206.536c0.346-1.305,1.252-2.195,2.043-1.985l0,0c0.792,0.21,1.137,1.434,0.791,2.737
+                l-7.52,28.339c-0.346,1.305-1.252,2.195-2.044,1.984l0,0c-0.791-0.21-1.136-1.432-0.79-2.736L230.946,206.536z"/>
+        </g>
+    </g>
+    <g id="Layer_2_copy_2">
+        <g>
+            <path fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M43.43,156.977"/>
+            <polygon fill="none" stroke="#0071BC" stroke-width="3" stroke-miterlimit="10" points="219.606,286.5 77.705,286.5 43.43,146.5 
+                254.567,146.5 		"/>
+            <path fill="none" stroke="#FF00FF" stroke-width="3" stroke-miterlimit="10" d="M144,113.5H45.475
+                c-10.721,0-19.412,7.414-19.412,16.5l0,0c0,9.086,8.691,16.5,19.412,16.5h203.847c10.721,0,19.47-7.414,19.47-16.5l0,0
+                c0-9.086-8.636-16.5-19.354-16.5H217.55h22.942c9.792,0,17.731-7.414,17.731-16.5l0,0c0-9.086-7.939-16.5-17.731-16.5H127"/>
+            <path fill="none" stroke="#FF00FF" stroke-width="3" stroke-miterlimit="10" d="M127,80.5h100.056
+                c8.379,0,15.172-7.414,15.172-16.5s-6.793-16.5-15.172-16.5h-19.652c15.116-14-20.474-34.275-20.474-34.275
+                c9.369,15.252-5.263,30.942-19.066,34.275H67.74c-8.378,0-15.172,7.414-15.172,16.5s6.794,16.5,15.172,16.5h-13.18
+                c-9.791,0-17.988,6.873-17.988,15.959l0,0c0,9.086,7.909,16.699,17.7,16.699"/>
+            <path fill="none" stroke="#FF00FF" stroke-width="3" stroke-miterlimit="10" d="M79.532,90.481"/>
+            <line fill="none" stroke="#FF00FF" stroke-width="3" stroke-miterlimit="10" x1="149" y1="113.5" x2="171" y2="113.5"/>
+            <line fill="none" stroke="#FF00FF" stroke-width="3" stroke-miterlimit="10" x1="119" y1="80.5" x2="97" y2="80.5"/>
+            <line fill="none" stroke="#FF00FF" stroke-width="3" stroke-miterlimit="10" x1="75" y1="80.5" x2="80" y2="80.5"/>
+            <line fill="none" stroke="#FF00FF" stroke-width="3" stroke-miterlimit="10" x1="187" y1="113.5" x2="193" y2="113.5"/>
+            <path fill="#0071BC" d="M212.717,278c1.35,0,2.443,0.682,2.443,1.5l0,0c0,0.818-1.094,1.5-2.443,1.5h-89.319
+                c-1.35,0-2.443-0.682-2.443-1.5l0,0c0-0.818,1.094-1.5,2.443-1.5H212.717z"/>
+            <path fill="#0071BC" d="M219.946,249.536c0.346-1.305,1.252-2.195,2.043-1.985l0,0c0.792,0.21,1.137,1.434,0.791,2.737
+                l-7.52,28.339c-0.346,1.305-1.252,2.195-2.044,1.984l0,0c-0.791-0.21-1.136-1.432-0.79-2.736L219.946,249.536z"/>
+            <path fill="#0071BC" d="M230.946,206.536c0.346-1.305,1.252-2.195,2.043-1.985l0,0c0.792,0.21,1.137,1.434,0.791,2.737
+                l-7.52,28.339c-0.346,1.305-1.252,2.195-2.044,1.984l0,0c-0.791-0.21-1.136-1.432-0.79-2.736L230.946,206.536z"/>
+        </g>
+    </g>
+    <g id="Layer_2_copy">
+        <g>
+            <path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M43.43,156.977"/>
+            <polygon fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="219.606,286.5 77.705,286.5 43.43,146.5 254.567,146.5 		
+                "/>
+            <path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M144,113.5H45.475c-10.721,0-19.412,7.414-19.412,16.5l0,0
+                c0,9.086,8.691,16.5,19.412,16.5h203.847c10.721,0,19.47-7.414,19.47-16.5l0,0c0-9.086-8.636-16.5-19.354-16.5H217.55h22.942
+                c9.792,0,17.731-7.414,17.731-16.5l0,0c0-9.086-7.939-16.5-17.731-16.5H127"/>
+            <path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M127,80.5h100.056c8.379,0,15.172-7.414,15.172-16.5
+                s-6.793-16.5-15.172-16.5h-19.652c15.116-14-20.474-34.275-20.474-34.275c9.369,15.252-5.263,30.942-19.066,34.275H67.74
+                c-8.378,0-15.172,7.414-15.172,16.5s6.794,16.5,15.172,16.5h-13.18c-9.791,0-17.988,6.873-17.988,15.959l0,0
+                c0,9.086,7.909,16.699,17.7,16.699"/>
+            <path fill="none" stroke="#FF00FF" stroke-miterlimit="10" d="M79.532,90.481"/>
+            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="149" y1="113.5" x2="171" y2="113.5"/>
+            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="119" y1="80.5" x2="97" y2="80.5"/>
+            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="75" y1="80.5" x2="80" y2="80.5"/>
+            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="187" y1="113.5" x2="193" y2="113.5"/>
+            <path fill="#FFFFFF" d="M211.369,279c1.31,0,2.37,0.09,2.37,0.5l0,0c0,0.408-1.061,0.5-2.37,0.5h-86.625
+                c-1.309,0-2.37-0.092-2.37-0.5l0,0c0-0.41,1.061-0.5,2.37-0.5H211.369z"/>
+            <path fill="#FFFFFF" d="M220.279,251.096c0.322-1.214,0.901-2.115,1.303-2.009l0,0c0.401,0.106,0.457,1.176,0.135,2.39
+                l-7.005,26.402c-0.322,1.216-0.902,2.116-1.304,2.009l0,0c-0.401-0.106-0.457-1.174-0.134-2.39L220.279,251.096z"/>
+            <path fill="#FFFFFF" d="M231.289,207.747c0.32-1.209,0.932-2.094,1.377-1.976l0,0c0.446,0.118,0.538,1.191,0.218,2.399
+                l-6.965,26.245c-0.319,1.209-0.931,2.094-1.377,1.975l0,0c-0.445-0.118-0.537-1.189-0.217-2.398L231.289,207.747z"/>
+        </g>
+    </g>
+    </svg>
+    </div> 
+    <!-- içerik -->
+    <div class="fiyat">
+        <div class="icerik">
+            <h4>Seçecegin tatlı ve kahve menu</h3>
+            <h2>Sadece</h2>
+            <h1>19.90₺</h1>
+        </div>
+    </div>  
+            </div>
+        </div>
+        <!-- arkadaki balon efekti -->
+        <div id="balloon"></div>
+    </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="app2.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+@font-face{
+    src: url(../assets/fonts/bangers/Bangers-Regular.ttf) format(truetype);
+    font-family: bangers;
+  }
+$backgroundColor : #ddd;
+body{
+    background-color: $backgroundColor;
+}
+.barContainer{
+    width:300px;
+  margin:50px auto;
+  text-align:center;
+  padding-top:50px;
+}
+.bar{
+    height: 30px;
+  background:#dcdbd7;
+  border-radius:20px;
+  border-top:1px solid #cfcec9;
+  border-bottom:1px solid #f7f6f4;
+  box-shadow:0 -1px 0 #bab9b4;
+  margin-bottom:24px;
+  position:relative;
+    .barIn{
+        margin-top: 2.5px;
+        margin-left: 10px;
+        width: 30px;
+        height: 23px;
+        border-radius: 20px;
+        background: rgb(255,238,225);
+        background: linear-gradient(90deg, rgba(255,238,225,1) 0%, rgba(254,227,30,1) 74%, rgba(253,149,0,1) 100%);
+    } 
+    & img{
+        width: 35px;
+        float: right;
+    }
+}
+.barAnime{
+    animation: bar ease-in forwards;
+}
+.stage1{
+    background-color: $backgroundColor;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    display: none;
+}
+.logoBaslik{
+    font-family: bangers;
+    line-height: 0.5em;
+    font-size: 50px;
+    position: absolute;
+    bottom: 460px;  left: 500px;
+    transform :  translateX(-50%) translateY(-0%);
+    opacity: 0;
+    animation: toRight 0.5s forwards ease-out;
+    animation-delay: 2.1s;
+}
+.shuttle{
+    position: absolute;
+    bottom: 300px;  left: 765px;
+    transform :  translateX(-50%) translateY(-0%);
+    animation: rise 2s ease-in-out forwards;
+}
+.shuttle img{
+    width: 100%;
+}
+.fire{
+    position: absolute;
+    bottom: -60px;  left: 23px;
+    transform :  translateX(-50%) translateY(0%)    translateZ(0);
+    animation-delay:200ms;
+}
+.fireSvg,.fireSvg2{
+    animation: flicker 0.6s ease-in-out infinite alternate; 
+    fill:#000000; stroke: #fee31e; 
+    stroke-width: 0.5px; 
+    stroke-linecap:round; 
+    stroke-linejoin:bevel;
+}
+.fire2{
+    position: absolute;
+    bottom: -60px;  left: 137px;
+    transform :  translateX(-50%) translateY(0%)    translateZ(0);
+    animation-delay:200ms;
+}
+.box,
+.box2{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    bottom: 0px;
+    animation: fog 0.8s ease-in forwards alternate;
+}
+.box{
+    left: 700px;
+}
+.box2{
+    left: 815px;
+}
+.cloud{
+    position: absolute;
+    bottom: 0px;  left: 570px;
+    opacity: 0;
+    animation: opacity1 3s ease-in forwards alternate;
+    animation-delay: 0.1s;
+}
+.cloud2{
+    position: absolute;
+    bottom: 0px;  left: 430px;
+    opacity: 0;
+    animation: opacity1 2.5s ease-in forwards alternate;
+    animation-delay: 1.6s;
+}
+.cloud3{
+    position: absolute;
+    bottom: 0px;  left: 810px;
+    opacity: 0;
+    animation: opacity1 2s ease-in forwards alternate;
+    animation-delay: 2s;
+}
+.kucult{
+    transform: scale(0.5);
+    transform-origin: -20px 5px;
+}
+@keyframes rise{
+    0%{
+        bottom: 25px;
+    }
+    50%{
+        bottom: 640px;
+    }
+    100%{
+        bottom: 440px;
+    }
+}
+ @keyframes flicker{
+    0% { 
+        filter: drop-shadow( -.75px 0px 6px #fd9500 );
+        transform: scale(1);
+    }; 
+    100% {
+        filter: drop-shadow( -2.75px 7px 6px #fd9500 ); stroke:#fd9500;
+        transform: scale(1.02);
+    } 
+  }
+@keyframes fog{
+    0%{
+        height: 15px;
+        opacity: 1;
+    }
+    
+    90%{
+        opacity: 0.8;
+    }
+    100%{
+        height: 570px;
+        opacity: 0;
+    }
+}
+@keyframes opacity1{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes toRight{
+    0%{
+        opacity: 0;
+        left: 900px;
+    }
+    100%{
+        opacity: 1;
+        left: 1000px;
+    }
+}
+@keyframes bar{
+    0%{
+        width: 30px;
+    }
+    100%{
+        width: 280px;
+    }
+}

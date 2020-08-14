@@ -1,0 +1,141 @@
+@font-face {
+  src: url(../assets/fonts/dancing_script/static/DancingScript-Regular.ttf);
+  font-family: dancing;
+}
+@font-face{
+  src: url(../assets/fonts/josefin/JosefinSlab-Bold.ttf);
+  font-family: josefin;
+}
+$font1: dancing, cursive;
+$font2: josefin, serif;;
+.stage4{
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  margin: 0;
+    padding: 0;
+    width: 1920px;
+    height: 1080px;
+    display: none;
+}
+.stage{
+    //background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    opacity: 0;
+    animation: opacityIn 1s forwards ease-in-out;
+    animation-delay: 1s;
+}
+#blurMe{
+  animation: blink 0.01s infinite alternate;
+}
+.baslik2{
+    margin-top: 120px;
+    margin-left: 150px;
+    margin-right: 450px;
+    width: 470px;
+    border-radius: 20px;
+    h1{
+        line-height: 1.2em;
+        margin: 0;
+        font-family: $font2;
+        font-size: 120px;
+        color: #fff6a9;
+        padding: 120px;
+        text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 15px yellow, 0 0 10px yellow, 0 0 50px yellow;
+        .tatli{
+            text-shadow: 0 0 5px #fc5a8d, 0 0 15px #fc5a8d, 0 0 20px #fc5a8d, 0 0 40px #fc5a8d, 0 0 60px #ff0000, 0 0 10px #fc5a8d, 0 0 98px #ff0000;
+            font-family: $font1;
+            animation: blink 0.01s infinite alternate;
+        }
+        animation: blink linear 1s;
+    }
+}
+
+.menu{
+  margin-top: 100px;
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  span{
+    font-size: 70px;
+    color: #fff6a9;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 1px yellow, 0 0 10px yellow, 0 0 5px yellow;
+    
+  }
+  .fiyat{
+    border-top: 2px solid black;
+    line-height: 0em;
+    width: 600px;
+    height: 220px;
+    text-align: center;
+  }
+    h4{
+      font-family: $font2;
+      color: #fff6a9;
+      font-size: 20px;
+      padding: 10px;
+      text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 1px yellow, 0 0 10px yellow, 0 0 5px yellow;
+    }
+    h2{
+      font-family: $font2;
+      color: #fff6a9;
+      font-size: 30px;
+      padding: 10px;
+      text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 1px yellow, 0 0 10px yellow, 0 0 5px yellow;
+    }
+    h1{
+      color: #fff6a9;
+      font-family: $font1;
+      font-size: 100px;
+      padding: 20px;
+      text-shadow: 0 0 5px #fd5f91, 0 0 2px #fd5f91, 0 0 5px #fd5f91, 0 0 10px #fd5f91, 0 0 15px #fd5f91, 0 0 2px #fd5f91, 0 0 25px #fd5f91;
+    }
+    
+}
+.balonlar{
+    position: absolute;
+    background-color: rgb(255, 255, 0);
+    opacity: 0.5;
+    border: 1px #eee solid ;
+    box-shadow: 0 0 20px #fff;
+    
+}
+
+// @keyframes brightUp{
+//     0%{
+//         color: #f8f818 ;
+//         text-shadow: .1vw 0vw .25vw #ffffd4, .2vw 0vw .25vw #ffffd4, .4vw 0vw .25vw #ffffd4,
+//                      .1vw 0vw 0vw #fcfc7f, .2vw 0vw 0vw #fcfc7f, .4vw 0vw 0vw #fcfc7f,
+//                      .1vw 0vw .1vw #fcfc7f, .2vw 0vw 1vw #fcfc7f,.4vw 0vw .1vw #fcfc7f,
+//                      .1vw 0vw 2vw #fcfc7f, .2vw 0vw 2vw #fcfc7f, .4vw 0vw 2vw #fcfc7f,
+
+//                      .1vw 0vw 1vw #f8f818, .2vw 0vw 0.5vw #f8f818,.4vw 0vw 1vw #f8f818,
+//                      .1vw 0vw 5vw #f8f818,.2vw 0vw 10vw #f8f818,.4vw 0vw 2vw #f8f818,
+//                      .1vw 0vw 10vw #f8f818,.2vw 0vw 15vw #f8f818,.4vw 0vw 2vw #f8f818;
+//     }
+//     50%{
+//         color: black ;
+//         text-shadow: 0;
+//     }
+//     100%{
+//         color: #f8f818 ;
+//         text-shadow: .1vw 0vw .25vw #ffffd4, .2vw 0vw .25vw #ffffd4, .4vw 0vw .25vw #ffffd4,
+//                      .1vw 0vw 0vw #fcfc7f, .2vw 0vw 0vw #fcfc7f, .4vw 0vw 0vw #fcfc7f,
+//                      .1vw 0vw .1vw #fcfc7f, .2vw 0vw 1vw #fcfc7f,.4vw 0vw .1vw #fcfc7f,
+//                      .1vw 0vw 2vw #fcfc7f, .2vw 0vw 2vw #fcfc7f, .4vw 0vw 2vw #fcfc7f,
+
+//                      .1vw 0vw 1vw #f8f818, .2vw 0vw 0.5vw #f8f818,.4vw 0vw 1vw #f8f818,
+//                      .1vw 0vw 5vw #f8f818,.2vw 0vw 10vw #f8f818,.4vw 0vw 2vw #f8f818,
+//                      .1vw 0vw 10vw #f8f818,.2vw 0vw 15vw #f8f818,.4vw 0vw 2vw #f8f818;
+//     }
+
+// }
+
+  @keyframes blink {
+    70% {
+      opacity: 0.7;
+    }
+  }
